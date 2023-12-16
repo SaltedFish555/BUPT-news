@@ -303,7 +303,7 @@ scheduler=BlockingScheduler() # 调度器
 scheduler.add_job(craw_and_send, 'interval',seconds=60) # cron表示cron表达式，允许使用按照精确的日期和时间点运行任务
 
 # 启动调度器
-print("爬虫程序正在调度中, 每天的9点、14点、22点执行一次")
+print("爬虫程序正在调度中, 每天的0点、9点、14点、22点执行一次")
 craw_and_send()
 scheduler.start()
 
